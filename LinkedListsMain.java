@@ -6,13 +6,12 @@ public class LinkedListsMain {
      */
     public static void main(String[] args) {
         LinkedLists<Integer> Stack = new LinkedLists<>();
-        Stack.push(70);
-        Stack.push(30);
-        Stack.push(56);
-        Stack.display();
-        System.out.println("Peak Element is = " + Stack.peak());
-        Stack.pop();
-        Stack.display();
+        LinkedLists<Integer> Queue = new LinkedLists<>();
+
+       Queue.append(56);
+       Queue.append(30);
+       Queue.append(70);
+       Queue.show();
 
     }
 }

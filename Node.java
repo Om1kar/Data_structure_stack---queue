@@ -8,5 +8,4 @@ public class Node<T> {
         this.data = data;
         next = null;
     }
-
 }

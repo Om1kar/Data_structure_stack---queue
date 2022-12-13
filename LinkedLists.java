@@ -3,6 +3,16 @@ package StackAndQueue;
 public class LinkedLists<T> {
     Node<T> head;
     Node<T> tail;
+    public void append(T data) {
+        Node <T> newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+        } else {
+            tail.next = newNode;
+        }
+        tail = newNode;
+    }
+
 
     // pushing new data
     public void push(T data) {
@@ -17,8 +27,8 @@ public class LinkedLists<T> {
     }
 
     // Display all Node with Value
-    public void display() {
-        Node<T> current = head;
+    public void show() {
+        Node current = head;
         if (head == null) {
             System.out.println("List is empty");
         }
