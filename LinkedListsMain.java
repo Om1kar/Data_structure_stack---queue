@@ -5,6 +5,9 @@ public class LinkedListsMain {
     ability to peek and pop from stack till its empty
      */
     public static void main(String[] args) {
+        /*
+        creating objects--
+         */
         LinkedLists<Integer> Stack = new LinkedLists<>();
         LinkedLists<Integer> Queue = new LinkedLists<>();
 
@@ -12,6 +15,7 @@ public class LinkedListsMain {
        Queue.append(30);
        Queue.append(70);
        Queue.show();
+       Queue.dequeue();
 
     }
 }

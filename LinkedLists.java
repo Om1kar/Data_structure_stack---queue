@@ -1,10 +1,11 @@
 package StackAndQueue;
 
 public class LinkedLists<T> {
-    Node<T> head;
+    Node head;
     Node<T> tail;
+
     public void append(T data) {
-        Node <T> newNode = new Node(data);
+        Node<T> newNode = new Node(data);
         if (head == null) {
             head = newNode;
         } else {
@@ -14,7 +15,7 @@ public class LinkedLists<T> {
     }
 
 
-    // pushing new data
+    // adding new data
     public void push(T data) {
         Node<T> newNode = new Node(data);
         if (head == null) {
@@ -53,5 +54,15 @@ public class LinkedLists<T> {
     public T peak() {
         Node<T> current1 = head;
         return current1.data;
+    }
+    public void dequeue() {
+        Node current = head;
+        while (current != head) {
+            if (current == head) {
+                head = head.next;
+                current = head;
+            }
+        }
+
     }
 }
